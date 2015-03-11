@@ -13,6 +13,8 @@
 		C415F8161AB0A204009099D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C415F8151AB0A204009099D9 /* Images.xcassets */; };
 		C415F8191AB0A204009099D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C415F8171AB0A204009099D9 /* LaunchScreen.xib */; };
 		C415F8251AB0A204009099D9 /* KPMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C415F8241AB0A204009099D9 /* KPMockTests.swift */; };
+		C415F8301AB0A25C009099D9 /* UIViewController+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C415F82F1AB0A25C009099D9 /* UIViewController+Swizzling.swift */; };
+		C415F8311AB0A25C009099D9 /* UIViewController+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C415F82F1AB0A25C009099D9 /* UIViewController+Swizzling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		C415F81E1AB0A204009099D9 /* KPMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C415F8231AB0A204009099D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C415F8241AB0A204009099D9 /* KPMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPMockTests.swift; sourceTree = "<group>"; };
+		C415F82F1AB0A25C009099D9 /* UIViewController+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Swizzling.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +80,8 @@
 		C415F80B1AB0A204009099D9 /* KPMock */ = {
 			isa = PBXGroup;
 			children = (
-				C415F80E1AB0A204009099D9 /* AppDelegate.swift */,
-				C415F8101AB0A204009099D9 /* ViewController.swift */,
-				C415F8121AB0A204009099D9 /* Main.storyboard */,
-				C415F8151AB0A204009099D9 /* Images.xcassets */,
-				C415F8171AB0A204009099D9 /* LaunchScreen.xib */,
-				C415F80C1AB0A204009099D9 /* Supporting Files */,
+				C415F82E1AB0A221009099D9 /* Example */,
+				C415F82F1AB0A25C009099D9 /* UIViewController+Swizzling.swift */,
 			);
 			path = KPMock;
 			sourceTree = "<group>";
@@ -110,6 +109,19 @@
 				C415F8231AB0A204009099D9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C415F82E1AB0A221009099D9 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				C415F80E1AB0A204009099D9 /* AppDelegate.swift */,
+				C415F8101AB0A204009099D9 /* ViewController.swift */,
+				C415F8121AB0A204009099D9 /* Main.storyboard */,
+				C415F8151AB0A204009099D9 /* Images.xcassets */,
+				C415F8171AB0A204009099D9 /* LaunchScreen.xib */,
+				C415F80C1AB0A204009099D9 /* Supporting Files */,
+			);
+			name = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +226,7 @@
 			files = (
 				C415F8111AB0A204009099D9 /* ViewController.swift in Sources */,
 				C415F80F1AB0A204009099D9 /* AppDelegate.swift in Sources */,
+				C415F8301AB0A25C009099D9 /* UIViewController+Swizzling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C415F8311AB0A25C009099D9 /* UIViewController+Swizzling.swift in Sources */,
 				C415F8251AB0A204009099D9 /* KPMockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
